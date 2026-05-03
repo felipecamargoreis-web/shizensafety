@@ -109,12 +109,16 @@
             <span class="subtitle">自然セーフティ</span>
           </div>
         </a>
-        <ul class="nav-links">
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="index.html#team">Our Team</a></li>
-          <li><a href="donate.html" style="color: var(--color-accent);">Donate</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#about" onclick="closeMenu()">About Us</a></li>
+          <li><a href="index.html#team" onclick="closeMenu()">Our Team</a></li>
+          <li><a href="donate.html" style="color: var(--color-accent);" onclick="closeMenu()">Donate</a></li>
+          <li><a href="donate.html" class="mobile-donate-btn" onclick="closeMenu()">Make an Impact</a></li>
         </ul>
         <a href="donate.html" class="btn btn-primary">Make an Impact</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
@@ -189,6 +193,15 @@
     </footer>
 
 
-
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+  }
+</script>
 </body>
 </html>

@@ -28,13 +28,17 @@
             <span class="subtitle">自然セーフティ</span>
           </div>
         </a>
-        <ul class="nav-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+          <li><a href="#team" onclick="closeMenu()">Our Team</a></li>
+          <li><a href="donate.html" onclick="closeMenu()">Donate</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <li><a href="donate.html" class="mobile-donate-btn" onclick="closeMenu()">Make an Impact</a></li>
         </ul>
         <a href="donate.html" class="btn btn-primary">Make an Impact</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
@@ -232,5 +236,15 @@
       </div>
     </footer>
 
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+  }
+</script>
 </body>
 </html>
