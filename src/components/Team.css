@@ -1,0 +1,113 @@
+.team {
+  padding: 6rem 0;
+  background-color: var(--color-background);
+}
+
+.team-header {
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.team-subtitle {
+  font-size: 1.125rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: var(--color-surface);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.05);
+}
+
+.team-socials {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.team-card:hover .team-socials {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-socials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.team-socials a:hover {
+  background-color: var(--color-accent);
+}
+
+.team-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.team-info h3 {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}

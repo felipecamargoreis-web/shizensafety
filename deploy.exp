@@ -1,0 +1,6 @@
+spawn surge /Users/felipecamargoreis/.gemini/antigravity/scratch/shizen-safety shizensafety-japan-ngo.surge.sh
+expect "email:"
+send "shizensafety-admin-2026@gmail.com\r"
+expect "password:"
+send "admin12345!\r"
+expect eof

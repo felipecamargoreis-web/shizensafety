@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Shizen Safety</title>
+    <meta name="description" content="Support Shizen Safety in our mission to bring disaster awareness and preparation to Japan.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/components/Navbar.css">
+    <link rel="stylesheet" href="src/components/Footer.css">
+
+    <style>
+        .donation-header {
+            padding: 120px 2rem 4rem 2rem;
+            text-align: center;
+            background-color: var(--color-surface);
+        }
+
+        .donation-title {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .donation-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .donation-tiers {
+            padding: 4rem 2rem;
+            background-color: var(--color-background);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tier-card {
+            background-color: var(--color-surface);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            border-top: 6px solid var(--color-primary);
+        }
+        
+        .tier-card.featured {
+            border-top: 6px solid var(--color-accent);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tier-card.featured:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .tier-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .tier-card.featured .tier-amount {
+            color: var(--color-accent);
+        }
+
+        .tier-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-text-dark);
+        }
+
+        .tier-desc {
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .donate-btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🗻</span>
+          <div class="logo-text">
+            <span class="title">SHIZEN SAFETY</span>
+            <span class="subtitle">自然セーフティ</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#team">Our Team</a></li>
+          <li><a href="donate.html" style="color: var(--color-accent);">Donate</a></li>
+        </ul>
+        <a href="donate.html" class="btn btn-primary">Make an Impact</a>
+      </div>
+    </nav>
+
+    <!-- Donation Header -->
+    <section class="donation-header animate-fade-in">
+        <div class="container">
+            <h1 class="donation-title">Empower Resilience. <span class="text-accent">Save Lives.</span></h1>
+            <p class="donation-subtitle">
+                Your contribution directly funds workshops, educational materials, and community initiatives 
+                that prepare youth and non-native residents in Japan for unexpected natural disasters.
+            </p>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-tiers container" style="display: flex; justify-content: center;">
+        <div class="tier-card featured animate-fade-in delay-200" style="max-width: 500px; width: 100%;">
+            <div class="tier-amount" style="font-size: 2rem; margin-bottom: 1rem;">Support Our Cause</div>
+            <p style="text-align: center; margin-bottom: 1.5rem; color: var(--color-text-muted);">
+                100% of the proceeds will be given directly to the Japanese Red Cross Society to support disaster relief efforts.
+            </p>
+            <a href="https://gogetfunding.com/shizensafety/" target="_blank" class="btn btn-primary donate-btn" style="font-size: 1.25rem; font-weight: 700; padding: 1.25rem;">Donate on GoGetFunding</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo footer-logo">
+              <span class="logo-icon">🗻</span>
+              <div class="logo-text">
+                <span class="title text-light">SHIZEN SAFETY</span>
+                <span class="subtitle text-light">自然セーフティ</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              A student-led NGO focused on disaster awareness in Japan. Helping communities prepare for the unexpected.
+            </p>
+          </div>
+          
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#team">Team</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Get in touch with us to collaborate, volunteer, or learn more.</p>
+            <p style="margin-bottom: 0.5rem;"><a href="mailto:shizensafety@gmail.com" class="contact-email">
+              shizensafety@gmail.com
+            </a></p>
+            <p><a href="tel:+5511910403730" class="contact-email">
+              +55 (11) 91040-3730
+            </a></p>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+              <a href="https://www.instagram.com/shizensafety/" target="_blank" style="color: #fff; background-color: transparent; text-decoration: none; font-weight: bold; border: 1px solid rgba(255,255,255,0.4); padding: 0.4rem 1rem; border-radius: 20px; transition: all 0.3s ease;">Instagram</a>
+              <a href="https://www.tiktok.com/@shizen.safety?_r=1&_t=ZT-962FOYoyQXe" target="_blank" style="color: #fff; background-color: transparent; text-decoration: none; font-weight: bold; border: 1px solid rgba(255,255,255,0.4); padding: 0.4rem 1rem; border-radius: 20px; transition: all 0.3s ease;">TikTok</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Shizen Safety Japan. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+</body>
+</html>
