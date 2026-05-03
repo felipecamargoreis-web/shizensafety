@@ -80,6 +80,11 @@
   width: 100%;
 }
 
+/* Hide mobile-only donate button on desktop */
+.mobile-donate-btn {
+  display: none;
+}
+
 /* Hamburger button */
 .hamburger {
   display: none;
